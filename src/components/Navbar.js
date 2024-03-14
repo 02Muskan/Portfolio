@@ -5,9 +5,10 @@ import Container from "react-bootstrap/Container";
 //import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
+import { IoLogoGithub } from "react-icons/io";
+
 import { CgGitFork } from "react-icons/cg";
 
-//import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -96,7 +97,7 @@ function NavBar() {
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <IoLogoGithub style={{ marginRight: "10px" }} />
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>

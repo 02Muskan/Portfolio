@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.png";
+import myImg from "../../Assets/avatar3.png";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
@@ -111,11 +111,3 @@ function Home2() {
   );
 }
 export default Home2;
-
-/*🚀 Embracing the world of web development, I've discovered a passion for shaping digital experiences.
- Well-versed in classics like C++, Javascript, and Go, I'm dedicated to building innovative web technologies and products.
- 
- My curiosity extends to the realms of blockchain. Leveraging tools like Node.js, React.js, and Next.js, 
- I transform ideas into compelling online realities. Let's create impactful web solutions together! 🌐✨
- I am fluent in C++ and know a bit of Python and am working on a few projects in the MERN stack.
-I plan to learn Next.js, Three.js and Typescript in the near future.*/
