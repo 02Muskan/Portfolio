@@ -17,7 +17,7 @@ function ResumeNew() {
           />
         </div>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <button
             className="rButton"
             variant="primary"
@@ -28,8 +28,23 @@ function ResumeNew() {
             style={{ maxWidth: "250px" }}
           >
             <IoDocumentTextOutline />
-            &nbsp;Download CV
+            &nbsp;Download Resume
           </button>
+        </Row> */}
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <a
+            href={
+              "https://drive.google.com/file/d/1bNJMJEt6U66HXgSJ1VEcvWPVoSyxy7SO/view?usp=sharing"
+            }
+            target="_blank"
+            rel="noreferrer"
+            style={{ maxWidth: "250px" }} // Optional: Remove underline from link
+          >
+            <button className="rButton" style={{ width: "100%" }}>
+              <IoDocumentTextOutline />
+              &nbsp;Download Resume
+            </button>
+          </a>
         </Row>
       </Container>
     </div>
