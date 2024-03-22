@@ -105,8 +105,6 @@ button:focus {
   transform: rotate(0deg) !important;
   left: 0 !important;
   opacity: 1 !important;
-  
-
 }
 
 .navbar-toggler:focus,
@@ -150,7 +148,6 @@ button:focus {
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
-
   }
 }
 .navbar-brand {
@@ -246,20 +243,21 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  /* z-index: -1; */
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 5px !important;
 }
 
 .home-section {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
+  background-position: center top;
+  width: 100%;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
+  padding-bottom: 2px !important;
 }
 
 .home-content {
@@ -317,13 +315,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
 }
 
 .home-about-description {
   color: white !important;
-  padding-top: 100px !important;
+  padding-top: 70px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
@@ -448,21 +446,35 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }
-
-.rButton{
-    background: #eee;
-    color: #5b5b5b;
-    font-weight: bold;
-    border-radius: 50px;
-    padding: 13px 29px;
-    font-size: 14px;
-    line-height: normal;
-    overflow: hidden;
-    transition: all 0.4s ease;
+.Buttons {
+  row-gap: 20px;
 }
-.rButton:hover{
-  color: #700c86;
-  
+.rButton {
+  background: #700c86;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 13px 29px;
+  font-size: 14px;
+  line-height: normal;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  border-style: hidden;
+  margin-top: 50px;
+}
+
+.homeButton {
+  display: flex;
+}
+
+.rButton:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.3s;
+  transform: translateY(-6px);
+  position: relative;
 }
 
 .project-card {
@@ -494,9 +506,13 @@ button:focus {
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  max-width: 60%;
+  max-width: 100%;
 }
 
+/* .qr {
+  width: 100%;
+  max-height: 100%;
+} */
 
 .blog-card {
   padding-top: 50px !important;
@@ -588,6 +604,33 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  position: relative;
+  display: flex;
+}
+
+.tech-icons span {
+  visibility: hidden;
+  width: auto;
+  background-color: rgba(7, 7, 7, 0.7); /* Transparent black background */
+  color: #ede0e0;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%; /* Position the tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%); /* Center the tooltip horizontally */
+  opacity: 0;
+  transition: opacity 0.3s, bottom 0.3s;
+}
+
+.tech-icons:hover span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 30px; /* Adjust position to align it perfectly above the icon */
 }
 
 @media (max-width: 767px) {
@@ -633,6 +676,7 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+  height: 100vh;
 }
 
 .resume {
@@ -646,7 +690,7 @@ button:focus {
 }
 
 .resume-right {
-  padding-left: 80px !important;
+  /* padding-left: 80px !important; */
 }
 
 @media (max-width: 767px) {

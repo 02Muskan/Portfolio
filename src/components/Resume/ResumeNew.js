@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import qrCodeImage from "../../Assets/scan me.png";
+import qrCodeImage from "../../Assets/scannn.png";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 function ResumeNew() {
@@ -9,7 +9,7 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
 
-        <div className="mb-4 ">
+        <div className="mb-4 qr">
           <img
             src={qrCodeImage}
             alt="QRCode"
@@ -42,7 +42,7 @@ function ResumeNew() {
           >
             <button className="rButton" style={{ width: "100%" }}>
               <IoDocumentTextOutline />
-              &nbsp;Download Resume
+              &nbsp;Resume
             </button>
           </a>
         </Row>

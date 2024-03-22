@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { IoLogoGithub } from "react-icons/io";
 
-import { CgGitFork } from "react-icons/cg";
+//import { CgGitFork } from "react-icons/cg";
 
 import {
   AiFillStar,

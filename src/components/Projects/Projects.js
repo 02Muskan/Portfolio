@@ -23,6 +23,39 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={learned}
+              isBlog={false}
+              title="LearnEd"
+              description="Discover the future of learning with our LearnEd website.I've designed an frontend for a college placement project, 
+              connecting you to educational resources & career opportunities. Experience to enhance your academic journey.🎓🚀"
+              ghLink="https://github.com/02Muskan/LearnEd"
+              demoLink="https://learn-ed-delta.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={todo}
+              isBlog={false}
+              title="Check List"
+              description="Manage tasks effortlessly with our React-powered Todo website. Crafted with a user-friendly interface,this website simplifies your daily organization.
+              Add, edit, and check off tasks with ease. Stay organized and focused with our straight forward Todo website –your productivity companion.📝🚀"
+              ghLink="https://github.com/02Muskan/react-worklist"
+              demoLink="https://react-worklist.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={extension}
+              isBlog={false}
+              title="Quick Laugh"
+              description="Get ready for daily laughs with Quick laugh, a playful fun extension made with Nlp and API.A seamless blend of tech and humor in every click.
+              Crafted with HTML, CSS, and JavaScript, it's your quick fix for a cheerful moment.
+              Embark on a laughter-filled journey with Quick Laugh– Where Every Click Sparks a Smile!😄✨"
+              ghLink="https://github.com/02Muskan/Joke-Extension"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={kerala}
               isBlog={false}
               title="Travel Vibes"
@@ -44,19 +77,6 @@ function Projects() {
               demoLink="https://password-generator-tau-gilt.vercel.app/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={extension}
-              isBlog={false}
-              title="Quick Laugh"
-              description="Get ready for daily laughs with Quick laugh, a playful fun extension made with Nlp and API.A seamless blend of tech and humor in every click.
-              Crafted with HTML, CSS, and JavaScript, it's your quick fix for a cheerful moment.
-              Embark on a laughter-filled journey with Quick Laugh– Where Every Click Sparks a Smile!😄✨"
-              ghLink="https://github.com/02Muskan/Joke-Extension"
-            />
-          </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={watchit}
@@ -66,30 +86,6 @@ function Projects() {
               Find your perfect timepiece effortlessly, as every second counts in style.⌚🌟."
               ghLink="https://github.com/02Muskan/WatchIT"
               demoLink="https://watch-it-liart.vercel.app/#"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={todo}
-              isBlog={false}
-              title="Check List"
-              description="Manage tasks effortlessly with our React-powered Todo website. Crafted with a user-friendly interface,this website simplifies your daily organization.
-              Add, edit, and check off tasks with ease. Stay organized and focused with our straight forward Todo website –your productivity companion.📝🚀"
-              ghLink="https://github.com/02Muskan/react-worklist"
-              demoLink="https://react-worklist.vercel.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={learned}
-              isBlog={false}
-              title="LearnEd"
-              description="Discover the future of learning with our LearnEd website.I've designed an frontend for a college placement project, 
-              connecting you to educational resources & career opportunities. Experience to enhance your academic journey.🎓🚀"
-              ghLink="https://github.com/02Muskan/LearnEd"
-              demoLink="https://learn-ed-delta.vercel.app/"
             />
           </Col>
         </Row>

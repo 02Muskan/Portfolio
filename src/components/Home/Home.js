@@ -4,10 +4,11 @@ import homeLogo from "../../Assets/home.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 function Home() {
   return (
-    <section>
+    <>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -28,6 +29,30 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+
+              <div
+                style={{ padding: 50, textAlign: "left" }}
+                className="homeButton"
+              >
+                <a
+                  href={
+                    "https://drive.google.com/file/d/1bNJMJEt6U66HXgSJ1VEcvWPVoSyxy7SO/view?usp=sharing"
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="rButton">
+                    <IoDocumentTextOutline />
+                    &nbsp;Resume
+                  </button>
+                </a>
+                <a href={"#about"}>
+                  <button className="rButton" style={{ marginLeft: "40px" }}>
+                    <IoDocumentTextOutline />
+                    &nbsp;Contact
+                  </button>
+                </a>
+              </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
@@ -42,7 +67,7 @@ function Home() {
         </Container>
       </Container>
       <Home2 />
-    </section>
+    </>
   );
 }
 
