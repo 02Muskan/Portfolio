@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import qrCodeImage from "../../Assets/scannn.png";
+import qrCodeImage from "../../Assets/scan.png";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 function ResumeNew() {
@@ -10,11 +10,7 @@ function ResumeNew() {
         <Particle />
 
         <div className="mb-4 qr">
-          <img
-            src={qrCodeImage}
-            alt="QRCode"
-            className="project-card-view-qr"
-          />
+          <img src={qrCodeImage} alt="" className="project-card-view-qr" />
         </div>
 
         {/* <Row style={{ justifyContent: "center", position: "relative" }}>
