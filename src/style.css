@@ -238,7 +238,7 @@ button:focus {
   }
 }
 #tsparticles {
-  position: fixed !important;
+  /* position: fixed !important; */
   background-repeat: no-repeat !important;
   background-size: cover !important;
   width: 100%;

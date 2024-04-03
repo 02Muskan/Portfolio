@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import qrCodeImage from "../../Assets/scan.png";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
@@ -7,7 +7,7 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Particle />
+        {/* <Particle /> */}
 
         <div className="mb-4 qr">
           <img src={qrCodeImage} alt="" className="project-card-view-qr" />
