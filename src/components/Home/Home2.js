@@ -10,7 +10,7 @@ import leetCodeIcon from "../../Assets/leetcode-icon.svg";
 function Home2() {
   const gmailAddress = "agarwalmuskan052@gmail.com";
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section">
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
